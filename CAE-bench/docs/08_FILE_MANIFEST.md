@@ -38,14 +38,15 @@ Drive on 30 August 2026, byte-exact · **D** placeholder, download still require
 | `legacy-2024/CEA_OLD_Jan_2024.ino` | A | — | The superseded January 2024 sketch |
 | `bench-2023/torquemotor1–3.ino` | E | — | The three brake firmwares. Never used in any report |
 | `bench-2023/calibration codes/` | E | — | `calibration_pressure`, `calibration_flow`, **`calibration_force`** — the load-cell sketch |
-| `bench-2023/CEA_Demo_22_Jan_2024/` | E | — | Demo sketch plus `NewDatasetPQN.m` |
-| `bench-2023/Code provided by Max 23 Jan 2024/` | E | — | **`Final_PID.m`, byte-exact.** Diff against the recovered copy — MISSING_FILES.md §B1 |
+| `reference/MCDC_Sensor_calibration_procedure.pdf` | E | 167 479 | The original calibration procedure, Veenhuizen & Hopman |
+| `bench-2023/CEA_Demo_22_Jan_2024/` | E | — | The January 2024 live-demo sketch |
 | `bench-2023/pressure_sensor/`, `water_flow_sensor/`, `flow_pressure_combined/`, `braccioServoTestwithoutShield/` | E | — | Single-sensor and servo test sketches |
 | **software/** | | | |
 | `CAEPC.py` | A | 14 056 | 2024 PC-side control loop, Dynamixel + matplotlib + xlsx |
 | `requirements.txt` | C | — | Reconstructed from the imports; not in the original repo |
 | `matlab/baip_old.m` | A | 8 600 | Marked outdated in the original repository |
-| `matlab/Final_PID_2023_RECOVERED.m` | **B** | — | Hilbrands' 2023 controller. **Diff against the original before use.** |
+| `matlab/Final_PID.m` | E | 8 539 | Hilbrands' 2023 controller, byte-exact original. The recovered copy was verified against it and deleted — MISSING_FILES.md §B1 |
+| `matlab/NewDatasetPQN.m` | E | 6 052 | Pressure/flow/speed dataset script, January 2024 demo |
 | **data/raw-2024/** | | | |
 | `DATACAE.xlsx` … `ResultNoPID2.xlsx` (11 files) | A | ~40 kB each | The runs as logged. **Speed ×4.84 too low, flow ×12.4 too high.** |
 | `*.pdf` (10 files) | A | — | The plots as generated at run time |

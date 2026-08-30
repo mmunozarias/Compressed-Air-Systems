@@ -54,7 +54,7 @@ CAE-bench/
 ├── firmware/
 │   ├── arduinoADC/               the 2024 acquisition sketch
 │   ├── legacy-2024/              the superseded January 2024 sketch
-│   └── bench-2023/               calibration, brake and sensor-test sketches (14 files)
+│   └── bench-2023/               calibration, brake and sensor-test sketches (11 files)
 ├── software/
 │   ├── CAEPC.py                  the 2024 PC-side control loop
 │   ├── requirements.txt

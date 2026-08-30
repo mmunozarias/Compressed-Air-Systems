@@ -26,7 +26,7 @@ and `firmware/bench-2023/`. What remains below is a short list.
 | `cad/wankel-2023/` | 8 + 17 | Engine assembly, mainframe, top cover, rotor, crank, output shaft, two GT2 pulleys; `Random/` holds the design iterations and STEP exports |
 | `cad/pneumatics/` | 5 | Sensor adapters, flow-valve frame and adapter |
 | `cad/torquemeter/` | 11 | **The complete friction-brake torque rig** — bases, three brake rotors, two friction elements, holder, coupling stabiliser, engine mounting base, and the Cura 3MF |
-| `firmware/bench-2023/` | 14 | Calibration sketches, three brake firmwares, the demo sketch, sensor test sketches |
+| `firmware/bench-2023/` | 11 | Calibration sketches, three brake firmwares, the demo sketch, sensor test sketches (three non-firmware files were refiled — §B2) |
 
 ---
 
@@ -36,49 +36,48 @@ Worth knowing about — none of these appeared in the original sweep.
 
 | File | Where it landed | Why it matters |
 |---|---|---|
-| `Final_PID.m` | `firmware/bench-2023/Code provided by Max 23 Jan 2024/` | **The byte-exact original** of the 2023 controller. Until now the repository only had the text-recovered copy. Diff them — see §B1. |
-| `NewDatasetPQN.m` | `firmware/bench-2023/CEA_Demo_22_Jan_2024/` | A MATLAB pressure/flow/speed dataset script that accompanied the January 2024 demo. Not referenced in any report. |
+| `Final_PID.m` | now `software/matlab/` | **The byte-exact original** of the 2023 controller. The repository previously held only the text-recovered copy. Verified — see §B1. |
+| `NewDatasetPQN.m` | now `software/matlab/` | A MATLAB pressure/flow/speed dataset script that accompanied the January 2024 demo. Not referenced in any report. |
 | `braccioServoTestwithoutShield.ino`, `pressure_sensor.ino`, `water_flow_sensor.ino` | `firmware/bench-2023/` | Single-sensor test sketches. The two sensor ones are the cleanest reference for the raw pin reads. |
 
-### B1. Do this diff
+### B1. The diff was run, and it passed
 
 `software/matlab/Final_PID_2023_RECOVERED.m` was reconstructed from a
-markdown-escaped API rendering. The original is now sitting next to it. Confirm they
-agree, then keep only the original:
+markdown-escaped API rendering. On 30 August 2026 it was compared line by line
+against the original. **No numeric literal and no operator differs.** `Kp`, `Ki`,
+`Kd`, `desiredRPM`, the event-based `RPM = 60/elapsedTime`, the `(flow/11)*60`
+scaling and the `min(45, Angle)` clamp are all identical.
 
-```powershell
-cd "$env:USERPROFILE\Documents\GitHub\Compressed-Air-Systems\CAE-bench"
-Compare-Object `
-  (Get-Content "software\matlab\Final_PID_2023_RECOVERED.m") `
-  (Get-Content "firmware\bench-2023\Code provided by Max 23 Jan 2024\Final_PID.m")
-```
+The only differences were whitespace, a provenance header added during recovery, one
+comment shortened, and one typo in Hilbrands' comments silently corrected
+(`%Filering` to `% Filtering`). Every conclusion in `docs/07_KNOWN_ISSUES.md` that
+was drawn from the recovered file therefore holds against the original.
 
-No output means the recovery was faithful and every conclusion drawn from it holds.
+The recovered copy has been deleted. `software/matlab/Final_PID.m` is the original.
 
-### B2. Three files are in the wrong folder
+### B2. Three misfiled files were moved — done
 
-They came inside the firmware zip but they are not firmware:
+They arrived inside the firmware zip but are not firmware. All three are now in place:
 
-| File | Move to |
+| File | Now at |
 |---|---|
-| `firmware/bench-2023/calibration codes/MCDC_Sensor_calibration_procedure (1).pdf` | `reference/` — this is the byte-exact original of `reference/sensor_calibration_procedure_2023.md` |
-| `firmware/bench-2023/Code provided by Max 23 Jan 2024/Final_PID.m` | `software/matlab/` — after the diff in §B1 |
-| `firmware/bench-2023/CEA_Demo_22_Jan_2024/NewDatasetPQN.m` | `software/matlab/` |
+| `MCDC_Sensor_calibration_procedure.pdf` | `reference/` — the byte-exact original of `reference/sensor_calibration_procedure_2023.md` |
+| `Final_PID.m` | `software/matlab/` |
+| `NewDatasetPQN.m` | `software/matlab/` |
 
 ---
 
 ## C. Recovered as text, and therefore NOT byte-exact
 
-The Google Drive API returns text files as a markdown-escaped rendering. These have
-been mechanically un-escaped. Every line I could verify is faithful, but **download
-the originals and diff before relying on them.**
+The Google Drive API returns text files as a markdown-escaped rendering. These were
+mechanically un-escaped. Two of the four now have their originals in the repository.
 
 | File in this repo | Original | Status |
 |---|---|---|
-| `software/matlab/Final_PID_2023_RECOVERED.m` | https://drive.google.com/file/d/1AHEYelm9op-rKECdSCq290AfyVtu5YcN/view | **Original now in repo — diff it, §B1** |
-| `reference/sensor_calibration_procedure_2023.md` | https://drive.google.com/file/d/1NcTs68NeVQ3JF6jvzESmAeCHfGNlPs-o/view | **Original PDF now in repo, §B2** |
-| `reference/assembly_manual_2024.md` | https://drive.google.com/file/d/12QYhJ9bgo3Mi30Q98cJiB5EE-rjmYTcK/view | still text-only |
-| `reference/bench_purchase_record.csv` | https://drive.google.com/file/d/12S-FDaBVhX_Im-J83x53LmS7h7cCgfUk/view | still text-only |
+| `software/matlab/Final_PID_2023_RECOVERED.m` | — | **Verified against the original, then deleted. See §B1.** |
+| `reference/sensor_calibration_procedure_2023.md` | `reference/MCDC_Sensor_calibration_procedure.pdf` | Original PDF is in the repository |
+| `reference/assembly_manual_2024.md` | https://drive.google.com/file/d/12QYhJ9bgo3Mi30Q98cJiB5EE-rjmYTcK/view | still text-only, **unverified** |
+| `reference/bench_purchase_record.csv` | https://drive.google.com/file/d/12S-FDaBVhX_Im-J83x53LmS7h7cCgfUk/view | still text-only, **unverified** |
 
 ---
 
