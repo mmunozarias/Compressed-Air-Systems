@@ -20,11 +20,12 @@ the acquisition chain. Corrected copies are in `data/processed/`, and the arithm
 is in [`docs/07_KNOWN_ISSUES.md`](docs/07_KNOWN_ISSUES.md). **Fix defects D1 to D3
 before you take a single new measurement.**
 
-**This repository is not complete, and it says exactly where the gaps are.** Binary
-files (STL, STEP, SolidWorks, `.ino`) could not be pulled programmatically from the
-Google Drive archive. Every one of them has a download link in
-[`MISSING_FILES.md`](MISSING_FILES.md). Five printed parts have no CAD anywhere and
-must be redrawn.
+**Two gaps remain, and this repository says exactly where they are.** The three
+student final reports and the original assembly-manual PDF are not here — download
+links are in [`MISSING_FILES.md`](MISSING_FILES.md) §D. And five printed parts, all
+of which carry an instrument, have no CAD in any archive and must be redrawn
+([`MISSING_FILES.md`](MISSING_FILES.md) §E). Everything mechanical, pneumatic and
+electrical that was ever drawn or flashed is in this repository.
 
 ---
 
@@ -45,24 +46,26 @@ CAE-bench/
 │   └── 07_KNOWN_ISSUES.md        seven defects, the torque gap, two doc errors
 ├── cad/
 │   ├── README.md                 measured geometry and the print profile
-│   ├── aart-2024/                the servo and valve bracket — COMPLETE
-│   ├── wankel-2023/              empty, download links in MISSING_FILES.md
-│   ├── pneumatics/               empty, download links in MISSING_FILES.md
-│   └── torquemeter/              empty, download links in MISSING_FILES.md
+│   ├── aart-2024/                the servo and valve bracket (6 files)
+│   ├── wankel-2023/              engine, covers, crank, shaft, pulleys (8 files)
+│   │   └── Random/               design iterations and STEP exports (17 files)
+│   ├── pneumatics/               sensor adapters and valve frame (5 files)
+│   └── torquemeter/              the friction-brake torque rig (11 files)
 ├── firmware/
-│   ├── arduinoADC/               the 2024 acquisition sketch — COMPLETE
+│   ├── arduinoADC/               the 2024 acquisition sketch
 │   ├── legacy-2024/              the superseded January 2024 sketch
-│   └── bench-2023/               empty, calibration and brake sketches to download
+│   └── bench-2023/               calibration, brake and sensor-test sketches (14 files)
 ├── software/
-│   ├── CAEPC.py                  the 2024 PC-side control loop — COMPLETE
+│   ├── CAEPC.py                  the 2024 PC-side control loop
 │   ├── requirements.txt
-│   └── matlab/                   the 2023 controller, recovered as text
+│   └── matlab/                   the 2023 MATLAB controller and dataset scripts
 ├── data/
 │   ├── raw-2024/                 11 runs as logged, plus their PDF plots
 │   └── processed/                the same runs with corrected columns
 └── reference/
     ├── assembly_manual_2024.md
     ├── sensor_calibration_procedure_2023.md
+    ├── MCDC_Sensor_calibration_procedure.pdf   the original of the above
     └── bench_purchase_record.csv
 ```
 
@@ -74,9 +77,10 @@ CAE-bench/
    about €300–350 plus €11 of filament for one bench. Two things to get right:
    the bearings are **R188 ZZ 6.35 × 12.7 × 4.76 mm** (the 3.18 mm version was
    superseded), and the bracket screws are **M4**, not the M2 the old report says.
-2. **Print the parts.** `cad/aart-2024/` for the servo bracket, at 100 % infill.
-   Download the engine and adapter STLs per `MISSING_FILES.md`. Redraw the five
-   missing sensor mounts.
+2. **Print the parts.** `cad/wankel-2023/` for the engine, `cad/pneumatics/` for the
+   sensor adapters, `cad/aart-2024/` for the servo bracket at 100 % infill, and
+   `cad/torquemeter/` if you are building the brake. Redraw the five missing sensor
+   mounts — `MISSING_FILES.md` §E lists them.
 3. **[Assemble](docs/02_MECHANICAL_ASSEMBLY.md)** — engine first, and it must spin
    freely by hand before anything else is attached.
 4. **[Plumb it](docs/03_PNEUMATIC_CIRCUIT.md)** — tank, adapter, pressure tee, flow

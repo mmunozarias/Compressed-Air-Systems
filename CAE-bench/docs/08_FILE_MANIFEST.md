@@ -4,7 +4,8 @@ Every file in this repository, where it came from, and how much to trust it.
 
 Legend — **A** byte-exact from Aart's GitHub repository · **B** recovered as text
 through the Drive API and mechanically un-escaped, verify before relying on it ·
-**C** generated during the August 2026 audit · **D** placeholder, download required.
+**C** generated during the August 2026 audit · **E** downloaded by hand from Google
+Drive on 30 August 2026, byte-exact · **D** placeholder, download still required.
 
 | Path | Src | Bytes | What it is |
 |---|---|---|---|
@@ -28,11 +29,18 @@ through the Drive API and mechanically un-escaped, verify before relying on it �
 | `CAEfinal_views.png` | C | 37 899 | Measured orthographic and isometric views |
 | `UMS5_CAE8_thumbnail.png` | C | 29 731 | Extracted from the 3MF |
 | `README.md` | C | — | Measured geometry and print settings |
-| **cad/wankel-2023/**, **cad/pneumatics/**, **cad/torquemeter/** | D | — | Empty. See MISSING_FILES.md §C1–C4 |
+| **cad/wankel-2023/** | E | — | 8 files: `Wankel assembly.SLDASM`, mainframe, top cover, `rotor.step.SLDPRT`, `crank rotary.SLDPRT`, `outputshaft wankel redesigned.stl`, two GT2 pulleys |
+| `cad/wankel-2023/Random/` | E | — | 17 files: Casing/Lid/Rotor/Shaft 1-8 iterations, STEP exports, `crank rotary_full_thread`, `rotorstepje.err` |
+| **cad/pneumatics/** | E | — | 5 files: two sensor adapters, tube-to-flow-sensor connector, `frame_flowvalve.stl`, `frame_updated.stl` (use this one) |
+| **cad/torquemeter/** | E | — | 11 files: the complete friction brake. `Engine mounting base.stl` replaces the corrupt `Engine_mount_wankel.STL` |
 | **firmware/** | | | |
 | `arduinoADC/arduinoADC.ino` | A | 3 100 | 2024 acquisition sketch. JSON over serial at 19200 |
 | `legacy-2024/CEA_OLD_Jan_2024.ino` | A | — | The superseded January 2024 sketch |
-| `bench-2023/` | D | — | Empty. Calibration and brake sketches, MISSING_FILES.md §C5 |
+| `bench-2023/torquemotor1–3.ino` | E | — | The three brake firmwares. Never used in any report |
+| `bench-2023/calibration codes/` | E | — | `calibration_pressure`, `calibration_flow`, **`calibration_force`** — the load-cell sketch |
+| `bench-2023/CEA_Demo_22_Jan_2024/` | E | — | Demo sketch plus `NewDatasetPQN.m` |
+| `bench-2023/Code provided by Max 23 Jan 2024/` | E | — | **`Final_PID.m`, byte-exact.** Diff against the recovered copy — MISSING_FILES.md §B1 |
+| `bench-2023/pressure_sensor/`, `water_flow_sensor/`, `flow_pressure_combined/`, `braccioServoTestwithoutShield/` | E | — | Single-sensor and servo test sketches |
 | **software/** | | | |
 | `CAEPC.py` | A | 14 056 | 2024 PC-side control loop, Dynamixel + matplotlib + xlsx |
 | `requirements.txt` | C | — | Reconstructed from the imports; not in the original repo |
