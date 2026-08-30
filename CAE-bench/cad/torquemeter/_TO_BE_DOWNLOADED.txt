@@ -1,3 +1,0 @@
-Placeholder. The files for this folder could not be pulled programmatically
-because of their MIME type. Download links are in MISSING_FILES.md, section C.
-Delete this file once you have populated the folder.
