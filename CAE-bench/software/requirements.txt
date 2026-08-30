@@ -1,0 +1,6 @@
+# Reconstructed from the imports in CAEPC.py. Not present in the original repository.
+pyserial>=3.5
+matplotlib>=3.7
+pandas>=2.0
+openpyxl>=3.1
+dynamixel-sdk>=3.7.31

@@ -1,0 +1,63 @@
+category,part,supplier,description_on_invoice,qty_or_pack,cost_eur,notes
+tank,Fire extinguisher 2 kg,Amazon.nl,Smartwares 10.014.68 Brandblusser poeder 2 kg ABC rood,1,27.29,Tank used as the pneumatic battery for the experimental setup
+tank,Fire extinguisher 1 kg,Amazon.nl,Smartwares 10.018.56 (BB1) Brandblusser Poeder 1 kg ABC,1,29.00,Tank for the experimental setup and the rover
+tank,Fire extinguisher foam 2 L,Amazon.nl,Smartwares SW SB2 SB2 Brandblusser Schuim 2 liter AB,3,71.97,First set converted to ballast configuration
+tank,Fire extinguisher foam 2 L,Amazon.nl,Smartwares SW SB2 SB2 Brandblusser Schuim 2 liter AB,2,47.98,Second set converted to ballast configuration
+tank,Fire extinguisher 1 kg ABC,IFSS B.V. via bol.com,ANAF Group Brandblusser 1 kg Poederblusser ABC,5,114.75,Final artifact tanks
+tank,Fire extinguisher 1 kg ABC,IFSS B.V. via bol.com,ANAF Group Brandblusser 1 kg Poederblusser ABC,6,137.70,Pressure vessels for design cycle 2 rovers
+pneumatic,Elbow fitting 8mm x 1/8 BSP,Amazon.nl,TAILONZ PNEUMATIC Mannelijke Elleboog 8mm Buis OD x 1/8 BSP Push,pack,13.49,90 degree fittings
+pneumatic,Straight fitting PC8-01,Amazon.nl,TAILONZ PNEUMATIC Mannelijke Rechte 8mm Buis OD x 1/8 BSP Push,10,9.99,First set
+pneumatic,Straight fitting PC8-01,Amazon.nl,TAILONZ PNEUMATIC Male Straight 8mm Tube OD x 1/8 BSP PC8-01,10,9.99,Second set
+pneumatic,Straight fitting PC8-01,Amazon.nl,TAILONZ PNEUMATIC Mannelijke Rechte 8mm Buis OD x 1/8 BSP,10,9.99,Third set
+pneumatic,Straight fitting,Amazon.nl,Bwintech 12 Pcs 8mm Buis OD x 1/8 Mannelijke BSP Draad Rechte Push,12,11.49,Better delivery time than the first ones
+pneumatic,Straight fitting,Amazon.nl,Bwintech 12 Pcs 8mm Buis OD x 1/8 Mannelijke BSP Draad Rechte Push in,12,20.48,Design cycle 2
+pneumatic,Quick connector adapter,Amazon.nl,10 stks Pneumatische Quick Connector Air Fittings Adapter 8mm 1/4BSP,10,12.72,Fourth set of fittings
+pneumatic,Quick connector adapter,Amazon.nl,10 stks Pneumatische Quick Connector Air Fittings Adapter 8mm,10,6.44,
+pneumatic,T-piece,CNCTEC UG via Amazon,Pneumatische meervoudige steekschroefverbinding TE 1/4 - 8mm IQS T-stuk perslucht,set,38.72,Second set of pneumatic valves/fittings
+pneumatic,Ball valve BVU-8,Amazon.nl,TAILONZ PNEUMATIC 8mm OD Kogelklep Luchtstroom Regelklep Push,1,18.99,
+pneumatic,Ball valve BVU-8,Amazon.nl,TAILONZ PNEUMATIC 8mm OD Kogelklep Luchtstroom Regelklep Push,2,37.98,
+pneumatic,Ball valve BVU-8,Amazon.nl,TAILONZ PNEUMATIC 8mm OD Ball Valve Air Flow Control Valve BVU-8,5,75.96,First set of pneumatic valves
+pneumatic,Ball valve,Amazon.nl,ERGAOBOY 5 Pcs 8mm OD Pneumatische Kogelkraan,5,18.99,Used on the rovers
+pneumatic,PU hose 8mm OD 5mm ID,Amazon.nl,HUAZIZ 8mm OD 5mm ID Pneumatic Air Hose PU Hose 12m Blue,12 m,29.98,
+pneumatic,PU hose 8mm OD,Amazon.nl,TAILONZ PNEUMATIC Blauw 8mm OD 10 Meter PU de Pijpslang,10 m,15.99,
+pneumatic,Splitters,Amazon.nl,TAILONZ PNEUMATIC 8mm OD Push to Connect Fittings Pneumatische,pack,17.99,Distributing air between cylinders
+pneumatic,O-ring set,Bol.com,O-ringset 32 maten 419 delig NBR Rubber,419,17.45,Sealing the pneumatic system
+pneumatic,Compressor accessories,Lemato,HBM 5 Delig Luchtgereedschapset,1,26.90,Hose and accessories for the HBM compressor
+sensor,Flow sensor,Amazon.nl,SENSTREE G1/2 Mannelijke Draad Messing Water Flow Sensor,1,16.11,Water turbine sensor used on air
+sensor,Flow sensor,Amazon.nl,SENSTREE G1/2 Mannelijke Draad Messing Water Flow Sensor,1,16.11,Second unit
+sensor,Pressure sensor G1/4,Amazon.nl,Druksensor G1/4 Drukomvormer Sensor Ingang 5V Uitgang 0.5-4.5V,pack,57.21,0-100 psi
+sensor,Photo interrupter,Vanallesenmeer.nl,GP1A57HRJ00F Photo Interrupter,1,16.85,Measures engine output velocity
+sensor,Photo interrupter breakout,Vanallesenmeer.nl,Photo Interrupter Breakout Board,1,5.85,SparkFun
+sensor,Photo interrupter,Vanallesenmeer.nl,GP1A57HRJ00F Photo Interrupter,pack,49.50,Additional units
+sensor,Photo interrupter set,Vanallesenmeer.nl,GP1A57HRJ00F Photo Interrupter and Breakout Board SparkFun,pack,51.30,Closing the control loop
+sensor,Load cell 500 g,Amazon.nl,Gewicht Sensor Silver 500g and hx711 B0CJ93Y21V,1,18.33,Measuring engine torque indirectly
+sensor,Load cell 1 kg,Amazon.nl,HALJIA Draagbare elektronische gewichtssensor laadcel weegsensor 1KG,1,7.99,First item
+sensor,Load cell 1 kg,Amazon.nl,HALJIA Draagbare elektronische gewichtssensor laadcel weegsensor 1KG,1,7.99,Second item
+sensor,Load cell 1 kg,Amazon.nl,HALJIA Draagbare elektronische gewichtssensor laadcel weegsensor,pack,15.98,
+sensor,Load cell 100 g,Amazon.nl,0-100g zeer nauwkeurige digitale parallelle straal elektronische,1,10.60,Measuring engine torque indirectly
+sensor,HX711 amplifier,Amazon.nl,ICQUANZX HX711 ADC converter breakout module digitale weegcel 1KG,1,6.99,Load cell amplifier
+mechanical,Bearing 6802 2RS,Lagerkoning.nl,IBB Kogellager 6802/61802 2RS 15x24x5mm,pack,32.28,Bearing B in the Wankel
+mechanical,Bearing R188,Lagerkoning.nl,IBB Miniatuur Kogellager R188 6.35x12.7x3.18mm,pack,32.28,SUPERSEDED - see R188 ZZ
+mechanical,Bearing R188 ZZ,Lagerkoning.nl,IBB Miniatuur Kogellager R188 ZZ 6.35x12.7x4.76mm,pack,82.45,Bearing A - THIS IS THE ONE IN USE
+mechanical,Bearing R188 ZZ,Lagerkoning.nl,IBB Miniatuur Kogellager R188 ZZ,4,11.95,Design cycle 2
+mechanical,Bearing 6802-2RS,Amazon.nl,10 stuks groefkogellagers 6802-2RS 15x24x5mm,10,13.30,
+mechanical,Bearing 6802-2RS,Amazon.nl,6802-2RS bearings,10,8.50,Wankel engines design cycle 2
+mechanical,Flexible shaft coupling,Okaphone,OKFLEX Flexibele as Koppeling,1,24.15,Improved engine mounting
+mechanical,Corner bracket,Amazon.nl,Alberts 330330 Hoekanker extra sterk met rib sendzimir verzinkt,pack,54.48,
+mechanical,M5 lock nuts,Amazon.nl,Jeboler M5 moeren 100 stuks zelfborgende A2 V2A 304 DIN 985,100,12.52,
+mechanical,M3 square nuts,Amazon.nl,100 stuks M3 DIN557 metrische draad vierkante moeren SS304,100,6.10,Wankel top cover
+mechanical,Graphite,Amazon.nl,STAEDTLER Mars Micro Carbon 250 1.3mm HB Potlood Vullingen,pack,7.67,Apex seals and lubrication
+mechanical,Graphite sticks,sostrene grenes,Graphite sticks,pack,1.24,Sealant for the Wankel
+mechanical,Super glue,Amazon.nl,Orzanne 18 x secondelijm extra sterk alleslijm snellijm 100 g,18,11.99,
+mechanical,Wood and screws,Hornbach,Wood screws and other materials,-,72.25,Wood planks o-rings and other items for the setup
+electrical,Arduino Uno,-,Arduino UNO,1,26.50,From the TA bench BOM
+electrical,Breadboard,AZDelivery,AZDelivery Mini Breadboard 400 Pin met 4 Busbars,pack,15.96,Rapid prototyping of the sensor wiring
+electrical,Crimping tool,Amazon.nl,Homca SN-28B Krimptang 0.14-1 mm2 met 2030 Dupont-krimpconnectoren,1,38.99,Custom cables and connectors
+electrical,Jumper wires and tape,Okaphone,PVC isolatietape Set Draadbruggen Male/Female Set soepele draadbruggen,set,16.20,Completing the setup wiring
+electrical,9V clip to DC jack,Kiwi Electronics,9V Batterij clip naar 2.1mm DC plug,1,10.75,Standalone power
+electrical,Cable adapter,Michele Chiapello,kabeladapter 9 V CLIP DC 2.1 JACK,1,7.48,
+tooling,Magnetic bit holder,Daw21onlineshop,Magnetische bithouder 60mm lang 1/4 bit houder,1,6.65,Workshop tool
+tooling,3D printer nozzles,Amazon.nl,24 pcs 0.2/0.3/0.4/0.5/0.6/0.8/1.0mm Messing MK8 3D Printer Nozzles,24,10.99,Used to regulate air flow in the turbine engine
+tooling,Ultimaker limit switches,Makerpoint,Ultimaker Limit Switches,pack,50.61,Repair kit for the Ultimaker printers
+misc,Magnets,Supermagnete.nl,Supermagneten used as payloads for the compressed-air engines,pack,33.20,Part of the load for the experimental setup
+misc,Hardware bundle,Amazon.nl,Several hardware for the compressed air engines,-,466.98,Combined invoice
